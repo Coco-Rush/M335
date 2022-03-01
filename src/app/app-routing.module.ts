@@ -18,6 +18,14 @@ const routes: Routes = [
   {
     path: 'navigation-detail',
     loadChildren: () => import('./navigation-detail/navigation-detail.module').then( m => m.NavigationDetailPageModule)
+  },
+  {
+    path: 'zahlen',
+    loadChildren: () => import('./zahlen/zahlen.module').then( m => m.ZahlenPageModule)
+  },
+  {
+    path: 'money-cash-flow',
+    loadChildren: () => import('./money-cash-flow/money-cash-flow.module').then( m => m.MoneyCashFlowPageModule)
   }
 ];
 
