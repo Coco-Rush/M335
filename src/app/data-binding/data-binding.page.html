@@ -3,10 +3,11 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Zahlen</ion-title>
+    <ion-title>Data-Binding</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<p>Mein erster Ausdruck: {{ anzahl*kosten }}.-</p>
+<h1>Hello {{Username}}</h1>
+<input type="text" placeholder="Rair" (input)="changeUsername($event)">
 </ion-content>

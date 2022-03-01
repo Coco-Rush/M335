@@ -26,6 +26,22 @@ const routes: Routes = [
   {
     path: 'money-cash-flow',
     loadChildren: () => import('./money-cash-flow/money-cash-flow.module').then( m => m.MoneyCashFlowPageModule)
+  },
+  {
+    path: 'string',
+    loadChildren: () => import('./string/string.module').then( m => m.StringPageModule)
+  },
+  {
+    path: 'objekte',
+    loadChildren: () => import('./objekte/objekte.module').then( m => m.ObjektePageModule)
+  },
+  {
+    path: 'arrays',
+    loadChildren: () => import('./arrays/arrays.module').then( m => m.ArraysPageModule)
+  },
+  {
+    path: 'data-binding',
+    loadChildren: () => import('./data-binding/data-binding.module').then( m => m.DataBindingPageModule)
   }
 ];
 
