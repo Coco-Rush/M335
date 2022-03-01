@@ -11,9 +11,9 @@ export class AppComponent {
     { title: 'Special', url: '/special', icon: 'mail' },
     { title: 'Zahlen', url: '/zahlen', icon: 'calculator' },
     { title: 'Strings', url: '/string', icon: 'chatbubbles' },
-    { title: 'Objekte', url: '/objekte', icon: 'cloud-circle' },
+    { title: 'Objekte', url: '/objekte', icon: '' },
     { title: 'Arrays', url: '/arrays', icon: 'cloud' },
-    { title: 'Data', url: '/data-binding', icon: '' },
+    { title: 'Data', url: '/data-binding', icon: 'cloud-circle' },
     { title: 'Geld', url: '/money-cash-flow', icon: 'cash' },
     
   ];
