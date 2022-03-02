@@ -14,6 +14,7 @@ export class AppComponent {
     { title: 'Objekte', url: '/objekte', icon: '' },
     { title: 'Arrays', url: '/arrays', icon: 'cloud' },
     { title: 'Data', url: '/data-binding', icon: 'cloud-circle' },
+    { title: 'Buttons', url: '/chip', icon: 'alert' },
     { title: 'Geld', url: '/money-cash-flow', icon: 'cash' },
     
   ];

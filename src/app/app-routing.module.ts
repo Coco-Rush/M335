@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path: 'data-binding',
     loadChildren: () => import('./data-binding/data-binding.module').then( m => m.DataBindingPageModule)
+  },
+  {
+    path: 'chip',
+    loadChildren: () => import('./chip/chip.module').then( m => m.ChipPageModule)
   }
 ];
 
