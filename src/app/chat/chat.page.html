@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbaro color="danger">
+    <ion-title>Chat</ion-title>
+  </ion-toolbaro>
+</ion-header>
+
+<ion-content style="overflow-y:hidden;">
+  <div #scrollMe class="chat-nachrichten" (swipe)="swipeEvent($event)">
+    <ion-list>
+        <div class="messages" [class.other]="chat.username === this.currentUser">
+            <div class="message">
+                <span>
+                    <h3 *ngIf="chat.username" >{{chat.username}} </h3>                                                    
+                    <p *ngIf="chat.text">{{chat.text}}</p>
+                 </span>
+                <div class="time" *ngIf="showDates">{{chat.date}}</div>
+            </div>
+        </div>
+    </ion-list>
+</div>
+<form class="chat-eingabe">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="10"></ion-col>
+      <ion-col size="2"></ion-col>
+    </ion-row>
+  </ion-grid>
+</form>
+</ion-content>

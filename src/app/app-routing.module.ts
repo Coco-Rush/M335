@@ -95,6 +95,14 @@ const routes: Routes = [
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule), 
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectLoggedInToRoot }
+  },
+  {
+    path: 'storage',
+    loadChildren: () => import('./storage/storage.module').then( m => m.StoragePageModule)
+  },
+  {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
   }
   
 ];
