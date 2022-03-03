@@ -46,6 +46,14 @@ const routes: Routes = [
   {
     path: 'chip',
     loadChildren: () => import('./chip/chip.module').then( m => m.ChipPageModule)
+  },
+  {
+    path: 'calculator',
+    loadChildren: () => import('./calculator/calculator.module').then( m => m.CalculatorPageModule)
+  },
+  {
+    path: 'newsletter',
+    loadChildren: () => import('./newsletter/newsletter.module').then( m => m.NewsletterPageModule)
   }
 ];
 

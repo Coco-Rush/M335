@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IonRouterOutlet } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-money-cash-flow',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoneyCashFlowPage implements OnInit {
 
-  constructor() { }
+  constructor(public routerOutlet: IonRouterOutlet) { }
 
   ngOnInit() {
   }
 
 }
+
