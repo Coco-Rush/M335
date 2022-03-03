@@ -8,8 +8,18 @@
 </ion-header>
 
 <ion-content>
-  <ion-item>
-    <ion-label position="floating">Name</ion-label>
-    <ion-input></ion-input>
-</ion-item>
+  <form [formGroup]="contactForm" (ngSubmit)="sendContactForm()">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input required formControlName="email" type="email"></ion-input>
+      <div class="formErrors">
+        <ion-item color="danger" *ngIf="!contactForm.controls.email.valid && !contactForm.controls.email.pending && (contactForm.controls.email.dirty)">
+          Sorry, that email is not correct!
+        </ion-item>
+      </div>
+    </ion-item>
+    <ion-button block color="primary" type="submit" [disabled]="contactForm.invalid">
+      SIGN ME UP SCOTTY
+    </ion-button>
+  </form>
 </ion-content>

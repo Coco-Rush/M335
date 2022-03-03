@@ -15,6 +15,8 @@ export class AppComponent {
     { title: 'Data-Binding', url: '/data-binding', icon: 'cloud-circle' },
     { title: 'Buttons', url: '/chip', icon: 'alert' },
     { title: 'Modal', url: '/money-cash-flow', icon: '' },
+    { title: 'Login', url: '/login', icon: 'user' },
+    { title: 'Registrieren', url: '/register', icon: 'user' },
     //Unimportant
     { title: 'Zahlen', url: '/zahlen', icon: 'calculator' },
     { title: 'Strings', url: '/string', icon: 'chatbubbles' },
